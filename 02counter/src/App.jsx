@@ -13,6 +13,8 @@ function App() {
   //  console.log("clicked",counter)
    if(counter<20)
    setCounter(counter+1)
+    // setCounter(counter+1) doestnt works because usestate send reqest in batch
+   setCounter(prevCounter =>prevCounter+1)
   }
 
   const delvalue = () =>{
